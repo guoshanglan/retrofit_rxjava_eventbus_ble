@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+
+  <include layout="@layout/title_head_back"
+      android:id="@+id/title_back"/>
+
+
+
+
+    <cc.hisens.hardboiled.patient.wideview.LoadingPointView
+        android:id="@+id/id_loading_point_view"
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_score"
+        android:visibility="gone"
+        android:layout_below="@id/title_back"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginTop="@dimen/x32"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x48"
+                android:background="@color/hisens_blue"
+                android:drawableLeft="@drawable/iief_ic_score"
+                android:drawablePadding="11dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x19"
+                android:text="当前评分"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x14" />
+
+            <cc.hisens.hardboiled.patient.wideview.ScoreView
+                android:id="@+id/score_view"
+                android:layout_width="@dimen/x135"
+                android:layout_height="@dimen/x174"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x41" />
+
+            <TextView
+                android:id="@+id/tv_assess_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x20"
+                android:text="测分时间:--"
+                android:textColor="#999999"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:id="@+id/tv_score_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x19"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x51"
+                android:drawableLeft="@drawable/iief_ic_help"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center_vertical"
+                android:text="请先完成测分，有助于结果分析"
+                android:textColor="#000000"
+                android:textSize="@dimen/x13" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_assess"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x43"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginTop="@dimen/x41"
+        android:background="@color/hisens_blue"
+        android:gravity="center"
+        android:text="开始测分"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x14" />
+
+    </LinearLayout>
+</RelativeLayout>

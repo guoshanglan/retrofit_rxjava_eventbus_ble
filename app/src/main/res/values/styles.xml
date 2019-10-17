@@ -1,0 +1,393 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation" />
+
+    <style name="introduction_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/x95</item>
+        <item name="android:layout_marginBottom">@dimen/x22</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textColor">@color/hisens_blue</item>
+    </style>
+
+    <style name="introduction_subtitle_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">118px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:textColor">@color/introducton_subtitle_text_color</item>
+
+    </style>
+
+    <style name="introduction_image_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="introduction_button_style">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">@dimen/x45</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:textColor">@color/hisens_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/blue_oval_background</item>
+        <item name="android:layout_marginTop">@dimen/x20</item>
+    </style>
+
+
+
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="takePhoto" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="syncData" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_out</item>
+    </style>
+
+
+
+    <style name="Theme_AudioDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--//是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--/背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="textview_style">
+
+    <item name="android:layout_height">48dp</item>
+
+    <item name="android:layout_width">41dp</item>
+
+    <item name="android:background">@color/transparent</item>
+
+    <item name="android:gravity">center</item>
+
+    <item name="android:textColor">@color/white</item>
+
+    <item name="android:textSize">30dp</item>
+
+    <item name="android:textStyle">bold</item>
+
+</style>
+
+    <style name="like_toast_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+
+    <style name="record_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x48</item>
+        <item name="android:paddingLeft">@dimen/x10</item>
+        <item name="android:paddingRight">@dimen/x10</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="record_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/record_text_color</item>
+        <item name="android:textSize">@dimen/x14</item>
+    </style>
+
+    <style name="record_input_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/colorPrimaryWhite</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/record_text_color</item>
+        <item name="android:textColorHint">@color/hint_input_text_color</item>
+        <item name="android:textSize">@dimen/x14</item>
+        <item name="android:drawableRight">@drawable/global_btn_right</item>
+        <item name="android:drawablePadding">@dimen/x10</item>
+        <item name="android:maxWidth">@dimen/x183</item>
+    </style>
+
+    <style name="subtitle_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/x10</item>
+        <item name="android:paddingTop">@dimen/x15</item>
+        <item name="android:paddingBottom">@dimen/x15</item>
+        <item name="android:textSize">@dimen/x12</item>
+        <item name="android:textColor">@color/hint_input_text_color</item>
+    </style>
+    <style name="record_subtitle" parent="subtitle_style">
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+    </style>
+
+    <style name="radio_group_style">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginBottom">9dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/blue_oval_background</item>
+    </style>
+
+    <style name="radio_button_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/sl_white_blue_text_color</item>
+    </style>
+
+
+
+    <style name="left_radio_button_style" parent="radio_button_style">
+        <item name="android:background">@drawable/sl_radiobutton_left</item>
+    </style>
+    <style name="right_radio_button_style" parent="radio_button_style">
+        <item name="android:background">@drawable/sl_radiobutton_right</item>
+    </style>
+    <style name="middle_radio_button_style" parent="radio_button_style">
+        <item name="android:background">@drawable/sl_radiobutton_middle</item>
+    </style>
+
+    <style name="disease_subtitle_style" parent="subtitle_style">
+        <item name="android:textSize">@dimen/x13</item>
+        <item name="android:paddingBottom">@dimen/x13</item>
+    </style>
+
+    <style name="monitor_subtitle_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:layout_marginTop">30px</item>
+        <item name="android:drawablePadding">14px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+        <item name="android:textSize">@dimen/x13</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="monitor_content_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/x15</item>
+        <item name="android:layout_marginLeft">@dimen/x10</item>
+        <item name="android:layout_marginRight">@dimen/x10</item>
+        <item name="android:textSize">@dimen/x12</item>
+        <item name="android:textColor">@color/report_text_color</item>
+    </style>
+
+
+    <style name="edit_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/colorPrimaryWhite</item>
+        <item name="android:drawableRight">@drawable/ic_empty</item>
+        <item name="android:paddingLeft">@dimen/x10</item>
+        <item name="android:paddingRight">@dimen/x10</item>
+        <item name="android:textSize">@dimen/x14</item>
+        <item name="android:textColor">@color/record_text_color</item>
+    </style>
+
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <style name="RadioButtonTheme" parent="CheckBoxTheme" />
+
+    <style name="CheckBoxTheme">
+        <item name="android:layout_width">@dimen/x87</item>
+        <item name="android:layout_height">@dimen/x35</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/sl_health_record_button</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/sl_health_record_button_text_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="DialogTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 还可以加入一些弹出和退出的动画 (lan)-->
+    </style>
+
+
+    <declare-styleable name="ArrowTextView">
+        <attr name="radius1" format="dimension" />
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="bg" format="color" />
+    </declare-styleable>
+
+    <style name="NavPage">
+
+    <item name="android:layout_width">fill_parent</item>
+
+    <item name="android:layout_height">fill_parent</item>
+
+    <item name="android:orientation">vertical</item>
+
+    <item name="android:gravity">center_horizontal</item>
+
+    <!-- <item name="android:background">@drawable/nav_page</item> -->
+
+    <item name="android:background">@color/hisens_blue</item>
+
+</style>
+
+    <!--QQ数字风格样式，注意每一项都不能少-->
+    <style name="picture.QQ.style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/hisens_blue</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/hisens_blue</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">true</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@drawable/picture_back</item>
+        <!--标题下拉箭头-->
+        <item name="picture.arrow_down.icon">@drawable/arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture.arrow_up.icon">@drawable/arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/white</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/white</item>
+        <!--图片列表勾选样式-->
+        <item name="picture.checked.style">@drawable/checkbox_selector</item>
+        <!--开启图片列表勾选数字模式,开启的话勾选样式要换-->
+        <item name="picture.style.checkNumMode">true</item>
+        <!--选择图片样式0/9-->
+        <item name="picture.style.numComplete">false</item>
+        <!--图片列表底部背景色-->
+        <item name="picture.bottom.bg">@color/color_fa</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture.preview.textColor">@color/black</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture.complete.textColor">@color/black</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture.num.style">@drawable/num_oval_blue</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/white</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/black</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/hisens_blue</item>
+        <!--预览界面底部背景色-->
+        <item name="picture.ac_preview.bottom.bg">@color/color_fa</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@drawable/picture_back</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/bar_grey</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/bar_grey</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/white</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture.folder_checked_dot">@drawable/orange_oval</item>
+    </style>
+
+
+
+</resources>

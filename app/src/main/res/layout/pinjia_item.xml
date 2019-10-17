@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="186******0"
+            android:id="@+id/tv_userphone"
+            android:textSize="@dimen/x13"
+            android:textColor="#999999"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:id="@+id/iv_star1"
+            android:background="@drawable/doctor_star_small"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:id="@+id/iv_star2"
+            android:background="@drawable/doctor_star_small"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:id="@+id/iv_star3"
+            android:background="@drawable/doctor_star_small"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:id="@+id/iv_star4"
+            android:background="@drawable/doctor_star_small"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:id="@+id/iv_star5"
+            android:background="@drawable/doctor_star_small"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x17"
+        android:layout_marginLeft="@dimen/x15"
+        android:id="@+id/tv_desc"
+        android:layout_marginRight="@dimen/x15"
+        android:text="李医生回答问题非常专业，对我的治疗非常有帮助"
+        android:textColor="#333333"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8月25日"
+        android:id="@+id/tv_date"
+        android:layout_marginTop="@dimen/x17"
+        android:layout_marginLeft="@dimen/x15"
+        android:textSize="@dimen/x13"
+        android:textColor="#999999"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x5"
+        android:layout_marginTop="@dimen/x17"
+        android:background="#f6f6f6"></View>
+
+</LinearLayout>

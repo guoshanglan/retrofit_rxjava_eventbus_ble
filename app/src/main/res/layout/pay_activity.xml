@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9e9e9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e9e9e9"
+        android:id="@+id/ly_pay"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/title_head_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:background="#fff4b9"
+            android:gravity="center"
+            android:text="预计3小时候内回复，超过48小时自动退款"
+            android:textColor="#c08912" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/x15">
+
+            <cc.hisens.hardboiled.patient.wideview.CircleImageView
+                android:id="@+id/iv_doctor_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x30"
+                android:src="@drawable/doctor_head_120" />
+
+
+            <TextView
+                android:id="@+id/tv_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x33"
+                android:layout_toRightOf="@id/iv_doctor_head"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:text="徐光文"
+                android:textColor="#000000"
+                android:textSize="@dimen/x16" />
+
+            <TextView
+                android:id="@+id/tv_zhiwei1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_doctor_name"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_toRightOf="@id/tv_doctor_name"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:text="主治医生"
+                android:textColor="#666666"
+                android:textSize="@dimen/x13" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_doctor_name"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:id="@+id/tv_workPlace"
+                android:layout_marginTop="@dimen/x9"
+                android:layout_toRightOf="@id/iv_doctor_head"
+                android:text="深圳市人民医院"
+                android:textColor="#666666"
+                android:textSize="@dimen/x15" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/x20"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:paddingTop="@dimen/x20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图文问诊"
+                android:textColor="#000000"
+                android:textSize="@dimen/x15" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="100元"
+                android:id="@+id/tv_price"
+                android:textColor="#ff902d"
+                android:textSize="@dimen/x17" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x13"
+            android:text="选择支付方式"
+            android:textColor="#999999" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/rl_wechat"
+            android:padding="@dimen/x15">
+
+            <ImageView
+                android:id="@+id/iv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pay_icon_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/iv_wechat"
+                android:text="微信支付"
+                android:textColor="#000000"
+                android:textSize="@dimen/x15" />
+
+
+            <ImageView
+                android:id="@+id/cb_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pay_selector" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:id="@+id/rl_alipay"
+            android:visibility="gone"
+            android:padding="@dimen/x15">
+
+            <ImageView
+                android:id="@+id/iv_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pay_icon_alipay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@id/iv_alipay"
+                android:text="支付宝支付"
+                android:textColor="#000000"
+                android:textSize="@dimen/x15" />
+
+
+            <ImageView
+                android:id="@+id/cb_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pay_selector" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x11"
+        android:text="费用由医生自行设定，硬汉邦平台不收取任何额外费用"
+        android:gravity="center"
+        android:layout_above="@id/rl_pay"
+        android:textColor="#999999" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x55"
+    android:id="@+id/rl_pay"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实际支付："
+        android:id="@+id/tv_shiji"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:textSize="@dimen/x12"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100元"
+        android:id="@+id/tv_price_pay"
+        android:layout_toRightOf="@id/tv_shiji"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/x21"
+        android:textColor="#ff902d"/>
+
+
+
+    <TextView
+        android:layout_width="@dimen/x102"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:text="立即支付"
+        android:gravity="center"
+        android:id="@+id/tv_pay_now"
+        android:textSize="@dimen/x17"
+        android:background="#ffc000"/>
+
+    <TextView
+        android:layout_width="@dimen/x102"
+        android:layout_height="match_parent"
+       android:layout_toLeftOf="@id/tv_pay_now"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="取消问诊"
+        android:gravity="center"
+        android:id="@+id/tv_pay_cancel"
+        android:textSize="@dimen/x17"
+        android:background="#d5dce3"/>
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00"
+        android:id="@+id/tv_time_received"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/x15"
+        android:textColor="#999999"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:paddingLeft="@dimen/x15">
+
+        <cc.hisens.hardboiled.patient.wideview.CircleImageView
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:id="@+id/iv_doctor_head"
+            android:src="@drawable/doctor_head_100"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/talk_bg_white"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginLeft="@dimen/x5">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        <ImageView
+            android:layout_width="@dimen/x100"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/x150"
+            android:maxHeight="@dimen/x200"
+            android:adjustViewBounds="true"
+            android:id="@+id/chat_item_image_received"
+            android:src="@drawable/doctor_head_160"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            android:text="9"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:id="@+id/chat_item_image_count_received"
+            android:gravity="center"
+            android:background="@drawable/chat_shape"
+            android:layout_alignRight="@id/chat_item_image_received"
+            android:layout_alignBottom="@id/chat_item_image_received"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/conntect_fail_dialog_shape"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="@dimen/x270"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x83"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未发现Hiensor,请确保Hiensor"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/x17"
+            android:layout_marginTop="@dimen/x20"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通电并且在手机附近"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/x17"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#ebebea"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:text="重试"
+        android:id="@+id/tv_re_try"
+        android:textSize="@dimen/x17"
+        android:gravity="center"
+        android:textColor="#0072e5"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#ebebea"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:text="帮助"
+        android:id="@+id/tv_help"
+        android:textSize="@dimen/x17"
+        android:gravity="center"
+        android:textColor="#0072e5"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#ebebea"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:text="暂不连接"
+        android:id="@+id/tv_disConnect"
+        android:textSize="@dimen/x17"
+        android:gravity="center"
+        android:textColor="#0072e5"/>
+</LinearLayout>

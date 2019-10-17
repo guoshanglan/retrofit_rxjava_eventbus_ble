@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/global_btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="图文问诊"
+                android:textColor="#000000"
+                android:textSize="@dimen/x17" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="@dimen/x65"
+            android:layout_height="@dimen/x29"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:background="@drawable/next_unclickable"
+            android:gravity="center"
+            android:id="@+id/tv_next"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cc.hisens.hardboiled.patient.wideview.CircleImageView
+            android:id="@+id/iv_doctor_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginTop="@dimen/x30"
+            android:src="@drawable/doctor_head_120" />
+
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_doctor_head"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toRightOf="@id/iv_doctor_head"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:text="徐光文"
+            android:textColor="#000000"
+            android:textSize="@dimen/x16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_doctor_name"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toRightOf="@id/tv_doctor_name"
+            android:ellipsize="end"
+            android:id="@+id/tv_zhiwei"
+            android:maxLength="12"
+            android:text="主治医生"
+            android:textColor="#000000"
+            android:textSize="@dimen/x13" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_doctor_name"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x9"
+            android:layout_toRightOf="@id/iv_doctor_head"
+            android:background="@drawable/talk_bg_gray"
+            android:paddingRight="@dimen/x4"
+            android:paddingTop="@dimen/x4"
+            android:text="请确保你的档案内容真实性，并详细描述你的症状以便我为你诊断分析，我将保证你的隐私安全"
+            android:textColor="#666666"
+            android:textSize="@dimen/x15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_myFile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_marginTop="@dimen/x20"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的档案"
+            android:textColor="#000000"
+            android:textSize="@dimen/x17"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/x9"
+            android:drawableRight="@drawable/doctor_btn_right_green"
+            android:text="未完善"
+            android:id="@+id/tv_myfile"
+            android:textColor="@color/hisens_blue"
+            android:textSize="@dimen/x17"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:maxLength="500"
+        android:padding="@dimen/x15"
+        android:textColor="#000000"
+        android:textSize="@dimen/x15"
+        android:textColorHint="#cccccc"
+        android:id="@+id/et_consultion"
+        android:gravity="left|top"
+        android:hint="请详细描述你的症状、就诊经历、用药情况等（最少10个字）"
+        android:background="@null"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/500"
+        android:gravity="right"
+        android:id="@+id/tv_count"
+        android:paddingRight="@dimen/x15"
+        android:textSize="@dimen/x12"
+        android:textColor="#cccccc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/x10"
+        android:background="#e5e5e5" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="@dimen/x30"
+    android:orientation="horizontal">
+    <cc.hisens.hardboiled.patient.wideview.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gv_addpic"
+        android:numColumns="3"
+        android:layout_marginBottom="@dimen/x30"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:verticalSpacing="@dimen/x5" />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:id="@+id/iv_addpic"
+      android:layout_marginLeft="@dimen/x15"
+      android:src="@drawable/doctor_btn_addpic"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x108"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x15"
+        android:text="你上传的图片仅对徐医生可见，可上传9张图片"
+        android:textColor="#999999"
+        android:paddingTop="@dimen/x20"
+        android:id="@+id/tv_tips"
+        android:textSize="@dimen/x14"
+        android:layout_gravity="center_vertical"/>
+
+
+</LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

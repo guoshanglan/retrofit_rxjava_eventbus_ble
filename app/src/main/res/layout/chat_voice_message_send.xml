@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x20"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_time_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/x20"
+        android:text="15:00"
+        android:textColor="#999999"
+        android:textSize="@dimen/x15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x15">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_voice"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/talk_bg_black">
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x10"
+                    android:src="@drawable/audio_animation_right_list" />
+
+
+                <TextView
+                    android:id="@+id/chat_item_vocie_time_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toLeftOf="@id/iv_voice"
+                    android:text="60s"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

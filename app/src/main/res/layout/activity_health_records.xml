@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_head_back"
+        android:id="@+id/tilte_back"/>
+
+    <cc.hisens.hardboiled.patient.wideview.LoadingPointView
+        android:id="@+id/id_loading_point_view"
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ly_info"
+        android:visibility="gone"
+         android:layout_below="@id/tilte_back"
+        android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:paddingLeft="@dimen/x10"
+        android:paddingTop="@dimen/x15"
+        android:paddingBottom="@dimen/x15"
+        android:text="@string/health_records_hint"
+        android:textColor="@color/hint_top_color"
+        android:textSize="@dimen/x12" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x15">
+
+            <RelativeLayout
+                android:id="@+id/rl_set_name"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/et_name"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_input_name" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_age"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_age" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_height"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_height" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_weight"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/weight" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_weight" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/record_subtitle"
+                android:text="@string/subtitle_marriage_birth_status"></TextView>
+
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/label_marriage_status" />
+
+                <TextView
+                    android:id="@+id/tv_marriage"
+                    style="@style/record_input_text"
+                    android:hint="婚姻状况" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/label_birth_status" />
+
+                <TextView
+                    android:id="@+id/tv_shengyu"
+                    style="@style/record_input_text"
+                    android:hint="生育状况" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/record_subtitle"
+                android:text="@string/subtitle_3m_sexual_life"></TextView>
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/label_sexual_life_status" />
+
+                <TextView
+                    android:id="@+id/tv_sexLove"
+                    style="@style/record_input_text"
+                    android:hint="请选择你的性生活状况" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/label_morning_wood_status" />
+
+                <TextView
+                    android:id="@+id/tv_chenbo"
+                    style="@style/record_input_text"
+                    android:hint="晨勃状况" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_separator" />
+
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/label_under_no_sexual" />
+
+                <TextView
+                    android:id="@+id/tv_boqi"
+                    style="@style/record_input_text"
+                    android:hint="勃起功能障碍" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/record_subtitle"
+                android:text="@string/st_ed_time"/>
+            <RelativeLayout
+                android:id="@+id/rl_set_sick_time"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_sick_time" />
+
+                <TextView
+                    android:id="@+id/tv_sick_time"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_time" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/record_subtitle"
+                android:text="@string/st_other_factors"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_set_concomitant_disease"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_concomitant_disease" />
+
+                <TextView
+                    android:id="@+id/tv_concomitant_disease"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_disease" />
+            </RelativeLayout>
+            <include layout="@layout/include_separator" />
+            <RelativeLayout
+                android:id="@+id/rl_set_operation_history"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_operation_or_trauma" />
+
+                <TextView
+                    android:id="@+id/tv_operation_history"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_operation_history" />
+            </RelativeLayout>
+            <include layout="@layout/include_separator" />
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_smoke_history" />
+                <TextView
+                    android:id="@+id/tv_smoke_history"
+                    style="@style/record_input_text"
+                    android:hint="请选择你的吸烟情况" />
+            </RelativeLayout>
+            <include layout="@layout/include_separator" />
+            <RelativeLayout style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_drink_history" />
+
+                <TextView
+                    android:id="@+id/tv_drunk"
+                    style="@style/record_input_text"
+                    android:hint="请选择你的饮酒情况" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_medicine_history"
+                style="@style/record_item_style">
+
+                <TextView
+                    style="@style/record_label"
+                    android:text="@string/l_medicine_history" />
+
+                <TextView
+                    android:id="@+id/tv_medicine_history"
+                    style="@style/record_input_text"
+                    android:hint="@string/hint_select_medicine_history" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

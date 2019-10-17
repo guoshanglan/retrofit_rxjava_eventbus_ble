@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <cc.hisens.hardboiled.patient.wideview.LoadingPointView
+        android:id="@+id/id_loading_point_view"
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/x100"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_mydoctor"
+        android:visibility="gone">
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/stickList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/x21"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ly_nomessage"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/doctor_icon_nomsg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x29"
+            android:textColor="#cccccc"
+            android:text="暂时没有新消息"
+            android:textSize="@dimen/x15"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

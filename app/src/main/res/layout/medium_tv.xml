@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/sl_tag"
+    android:gravity="center"
+    android:maxLines="1"
+    android:textColor="@drawable/sl_tag_text_color">
+
+</TextView>

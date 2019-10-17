@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <include layout="@layout/title_head_back"/>
+
+    <include layout="@layout/include_separator"></include>
+
+    <TextView
+        style="@style/disease_subtitle_style"
+        android:text="@string/l_antihypertensive_drugs"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tf_antihypertensive_tag"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <include layout="@layout/include_separator"></include>
+
+    <TextView
+        style="@style/disease_subtitle_style"
+        android:text="@string/l_antiandrogen"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tf_antiandrogen_tag"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <include layout="@layout/include_separator"></include>
+
+    <TextView
+        style="@style/disease_subtitle_style"
+        android:text="@string/l_antidepressants"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tf_antidepressants_tag"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <include layout="@layout/include_separator"></include>
+
+    <TextView
+        style="@style/disease_subtitle_style"
+        android:text="@string/l_recreational_drug"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tf_recreational_tag"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <include layout="@layout/include_separator"></include>
+
+    <TextView
+        style="@style/disease_subtitle_style"
+        android:text="@string/l_others"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tf_other_diseases_tag"
+        zhy:max_select="-1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <RelativeLayout
+        android:id="@+id/rl_input_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x10"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/et_input_disease"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x35"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_left_oval"
+            android:hint="@string/hint_customize"
+            android:textColorHint="@color/hint_input_text_color"
+            android:textColor="@android:color/black"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="@dimen/x13"
+            android:maxLength="10"/>
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_toRightOf="@id/et_input_disease"
+            android:layout_alignTop="@id/et_input_disease"
+            android:layout_alignBottom="@id/et_input_disease"
+            android:background="@drawable/bg_right_solid_oval"
+            android:textSize="@dimen/x13"
+            android:textColor="@color/white"
+            android:text="@string/l_complete"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_below="@id/et_input_disease"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x12"
+            android:textColor="#999999"
+            android:paddingLeft="@dimen/x5"
+            android:text="@string/hint_length_limit"/>
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/ib_add_other_disease"
+        android:layout_width="@dimen/x111"
+        android:layout_height="@dimen/x35"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x10"
+        android:background="@drawable/bg_oval_gray_outline"
+        android:src="@drawable/btn_add"/>
+
+</LinearLayout>

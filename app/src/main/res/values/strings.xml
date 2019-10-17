@@ -1,0 +1,1770 @@
+<resources>
+    <string name="hisens_app_name">硬汉邦</string>
+    <string name="app_version">V0.0.1</string>
+
+
+    <string name="login_appname">WELCOME!
+     登录</string>
+
+    <!-- 测量-->
+    <string name="current_measurement">我的监测</string>
+    <string name="intervene_state">干预状态</string>
+    <string name="intervene_state_hint_daytime">您此次测量为白天，医生需要根据您夜间20:00~08:00期间监测的数据才能为您进行准确诊断。</string>
+    <string name="intervene_state_hint">您此次测量受到了药物、外界影响，请重新测量或联系医生为您进行诊断分析。</string>
+    <string name="npt_state">夜间阴茎勃起(NPT)状态</string>
+    <string name="npt_state_hint_less_8h">请确保20:00~08:00期间，睡眠时长大于8小时，医生才能获取较准确的数据进行判断。</string>
+    <string name="npt_state_hint">坚持连续测量三晚有助于医生准确给出诊断，测量后患者即可向医生获取诊断结果。</string>
+    <string name="invalid_erection_state">无效勃起状态</string>
+    <string name="result_prediction_hint">当前结果今供参考，不能作为最终诊断结果，请联系医生进行确诊。</string>
+    <string name="result_prediction_hint_less_8h">您睡眠时间小于8小时，无法推断NPT结果，医生难以准确诊断。</string>
+    <string name="npt_hint">仅NPT参考结果，请联系医生进行确诊</string>
+    <string name="less_than_8h_hint">您睡眠时间不足8小时难以准确诊断</string>
+    <string name="daytime_hint">此次测量时间非夜间，医生难以准确分析哦~</string>
+    <string name="intervention_factor">干预因素</string>
+    <string name="not_night_measurement">非夜间测量</string>
+    <string name="night_hint">此次测量受到了药物、外界因素等影响</string>
+    <string name="my_monitor">我的监测</string>
+    <string name="today">今天</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+    <string name="this_measurement_state">本次测量状态</string>
+    <string name="intervene_factor">干预因素</string>
+    <string name="result_prediction">结果预测</string>
+    <string name="data_details">数据详情</string>
+    <string name="npt_prediction">NPT预测</string>
+    <string name="historic_record">历史记录</string>
+    <string name="npt_historic_record">夜间阴茎勃起(NPT)历史记录</string>
+    <string name="npt_historic_record_hint">(夜间20:00~08:00无标记正常睡眠数据)</string>
+    <string name="intervene_historic_record">干预状态历史记录</string>
+    <string name="intervene_historic_record_hint">(白天08:00~20:00和夜间有标记数据)</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="month_unit">个月</string>
+    <string name="no_data">暂时没有数据</string>
+    <string name="count">次</string>
+    <string name="max_erectile_count_with_unit">勃起强度峰值(g)</string>
+    <string name="circumference_variation">时间(min)</string>
+    <string name="erectile_count_with_unit">勃起次数(次)</string>
+    <string name="erectile_count">勃起次数</string>
+    <string name="persistent_period_avg_daily">日均持续时间(min/次)</string>
+    <string name="persistent_period_avg">平均持续时间</string>
+    <string name="composite_index">综合指数</string>
+    <string name="erect_strength_avg_daily">日均勃起强度(g/次)</string>
+    <string name="erectile_strength_avg">平均勃起强度</string>
+    <string name="circumference_avg_daily">日均周径变化(%/次)</string>
+    <string name="phentolamine">酚妥拉明</string>
+    <string name="apomorphine">脱水吗啡</string>
+    <string name="wuzi_yanzong_pills">五子衍宗丸</string>
+    <string name="av_video">观看AV</string>
+    <string name="score">分</string>
+    <string name="assess_time">测分时间：</string>
+    <string name="no_assessment_hint">请先完成测分，有助于结果分析</string>
+    <string name="normal_assessment_hint">当前评分正常，可佩带Hiensor进行详细监测</string>
+    <string name="exception_assessment_hint">建议您佩戴Hiensor配合医生在线监测治疗</string>
+    <string name="organic_ed">器质性ED</string>
+    <string name="psychic_ed">心理性ED</string>
+    <string name="very_good">非常棒</string>
+    <string name="title_intelligent_assistant">智能助手</string>
+    <string name="health_records">健康档案</string>
+    <string name="not_filled">未填写</string>
+    <string name="edit">编辑</string>
+    <string name="health_records_hint">信息仅供主治医生查看，有助于医生进行病症分析，请认真填写：</string>
+    <string name="name">姓名</string>
+    <string name="age">年龄</string>
+    <string name="height">身高</string>
+    <string name="height_union">cm</string>
+    <string name="weight">体重</string>
+    <string name="weight_union">kg</string>
+    <string name="sexual_and_fertility">性生活与生育状态</string>
+
+    <string name="smoking_history">吸烟史</string>
+    <string name="drinking_history">饮酒史</string>
+    <string name="medication_history">服药史</string>
+    <string name="name_hint">2&#8211;15个字符(中文、字母)</string>
+    <string name="required">必选</string>
+    <string name="have_sexual">有性生活</string>
+    <string name="have_not_sexual">无性生活</string>
+    <string name="have_fertility">有生育</string>
+    <string name="have_not_fertility">无生育</string>
+    <string name="hypertension">高血压</string>
+    <string name="diabetes">糖尿病</string>
+    <string name="heart_disease">心脏病</string>
+    <string name="prostate_disease">前列腺疾病</string>
+    <string name="hyperlipidemia">高脂血症</string>
+    <string name="sleep_disorders">睡眠障碍</string>
+    <string name="penisdeformity">阴茎畸形</string>
+    <string name="penile_induration">阴茎硬结</string>
+    <string name="hypogonadism">性腺功能低下</string>
+    <string name="hepatic_insufficiency">肝肾功能不全</string>
+    <string name="multiple_sclerosis">多发性肝硬化</string>
+    <string name="metabolic_syndrome">代谢综合症</string>
+    <string name="encephalatrophy">脑萎缩</string>
+    <string name="thyroid_thyroid">甲状腺异常</string>
+    <string name="concomitant_disease_hint">可补充你伴随的其他疾病</string>
+    <string name="depression">抑郁症</string>
+    <string name="spinal_cord_injury">脊髓损伤</string>
+    <string name="brain_trauma">脑外伤</string>
+    <string name="genital_trauma">生殖器创伤</string>
+    <string name="urethra_operation">尿道手术</string>
+    <string name="prostate_operation">前列腺手术</string>
+    <string name="pelvic_trauma">盆骨创伤</string>
+    <string name="sympathetic_nerve_resection">交感神经切除</string>
+    <string name="pelvic_viscera_operation">盆腔脏器手术</string>
+    <string name="pelvic_reflection_treatment">盆腔反射治疗</string>
+    <string name="retroperitoneal_lymph_node_cleaning">腹膜后淋巴清扫</string>
+    <string name="surgery_or_trauma_hint">可补充你其他手术和外伤情况</string>
+    <string name="dramamine">茶苯海明</string>
+    <string name="naproxen">甲氧萘丙酸</string>
+    <string name="disopyramide">吡二丙胺</string>
+    <string name="furosemide">呋塞米</string>
+    <string name="flutamide">氟他米特</string>
+    <string name="hydrochlorothiazide">氢氯噻嗪</string>
+    <string name="enalapril">恩纳普利</string>
+    <string name="amoxicilli">阿莫西平</string>
+    <string name="medication_history_hint">可补充你其他服药历史</string>
+    <string name="never">从不</string>
+    <string name="occasionally">偶尔</string>
+    <string name="often">经常</string>
+    <string name="everyday">每天</string>
+    <string name="sync_completed_with_drawable">√同步成功</string>
+    <string name="mark_measurement_state">选择干预因素</string>
+    <string name="mark_measurement_state_hint">（是否服用药物或受到外界影响等）</string>
+    <string name="is_sleep">是否睡眠</string>
+    <string name="nothing">无</string>
+    <string name="sildenafil">西地那非</string>
+    <string name="vardenafil">伐地那非</string>
+    <string name="tadalafil">他达拉非</string>
+    <string name="masturbation">手淫</string>
+    <string name="sexual_stimulus">性刺激</string>
+    <string name="other">其它</string>
+    <string name="others_hint">可补充其他干预因素</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="l_confirm">确定</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="dialog_year">@string/year</string>
+    <string name="dialog_month">@string/month</string>
+    <string name="dialog_day">@string/day</string>
+    <string name="dialog_hour_simple">时</string>
+    <string name="dialog_minute_simple">分</string>
+    <string name="l_test_in_sleep">睡眠时监测</string>
+    <string name="l_test_in_sober">清醒时监测</string>
+
+    <!--关于我们-->
+    <string name="about_us_content">硬汉邦（患者版）——是一款专注男性阴茎勃起功能监测（简称ED）的专业移动医疗软件。该软件由顶级医生专家团队倾力打造，集疾病快速监测分析、名医全程跟踪治疗诊断与一体，快速进行医患数据化沟通，让治疗更精准高效，让患者早日康复！</string>
+    <string name="telephone">客服热线</string>
+    <string name="phone_number">0755-33158961</string>
+    <string name="protocol">硬汉邦服务条款及协议</string>
+    <string name="copyright">Copyright @2017</string>
+    <string name="question_and_suggestion">问题和意见</string>
+    <string name="please_write_your_question">请输入您的问题描述以便我们提供更好的帮助</string>
+    <string name="contact_telephone">联系电话：</string>
+    <string name="feedBack_telephone_hint">选填，便于我们与您联系</string>
+    <string name="submit">提交</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_success_tips">感谢您对硬汉邦L的关注与支持，我们会认真处理您的反馈，尽快修复和完善相关功能。</string>
+    <string name="close">关闭</string>
+
+    <!--蓝牙-->
+    <string name="battery">电量</string>
+    <string name="data_syncing">同步数据中，请稍后...</string>
+    <string name="data_sync_success">同步成功</string>
+    <string name="connecting">连接中</string>
+    <string name="message_waiting_connection">正在连接，请稍后...</string>
+    <string name="message_connect_success">连接成功</string>
+    <string name="no_latest_data">无最新数据</string>
+    <string name="sync_failed">同步失败</string>
+
+    <string name="disconnected1_hint">确认手机蓝牙已开启,确保底座连接USB</string>
+
+    <string name="not_found_device_details">未发现Hiensor,请确保Hiensor通电并且在手机附近</string>
+    <string name="go_setting_openblue">请前往手机“设置”中打开蓝牙</string>
+    <string name="connected">已连接</string>
+    <string name="searching_device">正在查找设备</string>
+    <string name="near_to_phone">请将手机放置设备附件</string>
+    <string name="search_success">查找完成</string>
+    <string name="please_select_connect_device">请选择你要连接的设备</string>
+    <string name="re_search">重新搜索</string>
+    <string name="connected_fail">连接不成功</string>
+    <string name="dis_connected">无法连接,请尝试重启蓝牙</string>
+
+    <!--module label-->
+    <string name="label_monitor">监测</string>
+    <string name="my_report">我的报告</string>
+    <string name="my_record">我的档案</string>
+    <string name="ehs_score">EHS评分</string>
+    <string name="title_my_doctors">我的医生</string>
+    <string name="label_doctor">医生</string>
+    <string name="label_helper">客服</string>
+    <string name="iief_5_score">IIEF-5评分</string>
+    <string name="intelligent_assistant">客服助手</string>
+    <string name="recommentions">热门推荐</string>
+    <string name="current_consultation">当前问诊</string>
+    <string name="the_man_circle">男人圈</string>
+
+
+    <!--设置-->
+    <string name="taking_picture">拍照</string>
+    <string name="gallery">手机相册</string>
+    <string name="cancel">取消</string>
+    <string name="modify_nickname">修改昵称</string>
+    <string name="save">保存</string>
+    <string name="modify_nickname_hint">2&#8211;15个字符(中文、字母、数字、下划线)</string>
+    <string name="title_activity_historic_record">历史记录</string>
+
+    <string name="label_record">记录</string>
+    <string name="title_ehs_score">EHS评分表</string>
+    <string name="hiensor_results">Hiensor监测结果</string>
+    <string name="warning_description">本次监测是了解您过去三个月的健康状况以及分析与ED密切相关的风险因素和趋势，
+        并以客观真实的动态数据来展现您的勃起情况。
+        本次监测不代表最终诊断意见，只是初步评估您目前的健康状况，若监测结果为心理性ED可能性大，
+        则需积极的自我调整；若监测为中/重度以上或非心理性ED，则建议就诊专科医生进行诊治。
+    </string>
+
+    //health record
+    <string name="hint_input_name">请输入您的姓名</string>
+    <string name="hint_select_age">请选择您的出生日期</string>
+    <string name="hint_select_height">请选择您的身高</string>
+    <string name="hint_select_weight">请选择您的体重</string>
+    <string name="hint_select_time">请选择时间</string>
+    <string name="hint_select_disease">请选择您伴随的疾病</string>
+    <string name="hint_select_operation_history">请选择您的手术史/外伤史</string>
+    <string name="hint_select_medicine_history">请选择您的服药史</string>
+
+    <string name="subtitle_marriage_birth_status">婚姻与生育状况</string>
+    <string name="label_marriage_status">婚姻状况</string>
+    <string name="label_birth_status">生育状况</string>
+    <string name="label_marriage">已婚</string>
+    <string name="label_unmarriaged">未婚</string>
+    <string name="label_has_children">有子女</string>
+    <string name="label_no_children">无子女</string>
+    <string name="subtitle_3m_sexual_life">过去3-6月性生活概况</string>
+    <string name="label_sexual_life_status">性生活状况</string>
+    <string name="label_morning_wood_status">晨勃状况</string>
+    <string name="label_under_no_sexual">勃起功能障碍</string>
+    <string name="label_regularity">有规律</string>
+    <string name="label_no_regularity">无规律</string>
+    <string name="label_morning_wood">有晨勃</string>
+    <string name="label_no_morning_wood">无晨勃</string>
+    <string name="label_erection">有勃起</string>
+    <string name="label_no_erection">无勃起</string>
+
+    <string name="st_ed_time">性障碍状况持续时长</string>
+    <string name="l_sick_time">病程持续时间</string>
+
+    <string name="st_other_factors">其他影响因素</string>
+    <string name="l_concomitant_disease">伴随疾病</string>
+    <string name="l_operation_or_trauma">手术/外伤</string>
+    <string name="l_smoke_history">吸烟史</string>
+    <string name="l_drink_history">饮酒史</string>
+    <string name="l_medicine_history">服药史</string>
+    <string name="l_never">从不</string>
+    <string name="l_occasion">偶尔</string>
+    <string name="l_often">经常</string>
+    <string name="l_everyday">每天</string>
+    <string name="m_input_real_name">请尽量填写你的真实姓名，便于医生诊断录入</string>
+
+    <string name="l_global_disease">全身性疾病</string>
+    <string name="l_genital_system_disease">生殖系统疾病</string>
+    <string name="l_internal_secretion_disease">内分泌性疾病</string>
+    <string name="l_psychological_disease">精神心理性疾病</string>
+    <string name="l_others">其他</string>
+
+    <string name="l_high_blood">高血压</string>
+    <string name="l_coronary_heart_disease">冠心病</string>
+    <string name="l_diabetes">糖尿病</string>
+    <string name="l_hyperlipidemia">高血脂</string>
+
+    <string name="l_penis_malformation">阴茎畸形</string>
+    <string name="l_penis_indurate">阴茎硬结</string>
+    <string name="l_prostate_disease">前列腺疾病</string>
+
+    <string name="l_hypothyroidism">甲亢/甲减</string>
+    <string name="l_hypogonadism">性腺功能减退</string>
+    <string name="l_hyperprolactinemia">高泌乳素血症</string>
+
+    <string name="l_depressive_disorder">抑郁症</string>
+    <string name="l_sleep_disorder">睡眠障碍</string>
+    <string name="hint_customize">自定义症状</string>
+    <string name="l_complete">完成</string>
+    <string name="hint_length_limit">自定义症状最多支持10个字</string>
+
+    <string name="l_urethral_injury">尿道损伤</string>
+    <string name="l_prostate_operation">前列腺手术</string>
+    <string name="l_pelvic_trauma">骨盆外伤</string>
+    <string name="l_genital_trauma">生殖器外伤</string>
+    <string name="l_genital_operation">生殖器手术</string>
+    <string name="l_central_nervous_system_trauma">中枢神经系统外伤/手术</string>
+    <string name="l_lumbar_injury">腰椎或脊髓外伤/手术</string>
+
+    <string name="l_antihypertensive_drugs">抗高血压药</string>
+    <string name="l_hydragogue">噻嗪利尿剂</string>
+    <string name="l_antiandrogen">抗雄激素药</string>
+    <string name="l_gnrh">GnRH类似药</string>
+    <string name="l_antagonist">拮抗剂</string>
+    <string name="l_antidepressants">抗抑郁或精神类药</string>
+    <string name="l_tricyclic_antidepressant">三环类抗抑郁药</string>
+    <string name="l_diazepam">安定</string>
+    <string name="l_recreational_drug">消遣性药</string>
+    <string name="l_alcoholic_beverage">酒精饮料</string>
+    <string name="l_heroin">海洛因</string>
+    <string name="l_cocaine">可卡因</string>
+
+    //iief5 assess
+    <string name="reassess">重新测分</string>
+    <string name="start_assess">开始测分</string>
+    <string name="assess_description">请根据您过去6个月内性生活的情况，选出下面5个下面问题中适合您的选项，从而初步判断是否患有勃起功能障碍(ED)以及病症程度</string>
+    <string name="assess_subject0_title">1/5,您对获得勃起和维持勃起的自信程度如何？</string>
+    <string name="assess_subject0_option0">没有</string>
+    <string name="assess_subject0_option1">很低</string>
+    <string name="assess_subject0_option2">低</string>
+    <string name="assess_subject0_option3">中等</string>
+    <string name="assess_subject0_option4">高</string>
+    <string name="assess_subject0_option5">很高</string>
+    <string name="assess_subject1_title">2/5,您受到性刺激而有阴茎勃起时，有多少次能够插入？</string>
+    <string name="assess_subject1_option0">无性活动</string>
+    <string name="assess_subject1_option1">几乎没有/完全没有</string>
+    <string name="assess_subject1_option2">少数几次（远少于一半时候）</string>
+    <string name="assess_subject1_option3">有时（约一半时候）</string>
+    <string name="assess_subject1_option4">大多数时候（远高于一半时候）</string>
+    <string name="assess_subject1_option5">几乎总是/总是</string>
+    <string name="assess_subject2_title">3/5,您性交时，阴茎插入后，有多少次能够维持勃起状态？</string>
+    <string name="assess_subject2_option0">无性活动</string>
+    <string name="assess_subject2_option1">几乎没有/完全没有</string>
+    <string name="assess_subject2_option2">少数几次（远少于一半时候）</string>
+    <string name="assess_subject2_option3">有时（约一半时候）</string>
+    <string name="assess_subject2_option4">大多数时候（远高于一半时候）</string>
+    <string name="assess_subject2_option5">几乎总是/总是</string>
+    <string name="assess_subject3_title">4/5,您性交时，维持阴茎勃起至性交完成，有多大困难？</string>
+    <string name="assess_subject3_option0">无性活动</string>
+    <string name="assess_subject3_option1">困难极大</string>
+    <string name="assess_subject3_option2">困难很大</string>
+    <string name="assess_subject3_option3">困难</string>
+    <string name="assess_subject3_option4">有点困难</string>
+    <string name="assess_subject3_option5">不困难</string>
+    <string name="assess_subject4_title">5/5,您性交时，有多少次感到满足？</string>
+    <string name="assess_subject4_option0">无性活动</string>
+    <string name="assess_subject4_option1">几乎没有/完全没有</string>
+    <string name="assess_subject4_option2">少数几次（远少于一半时候）</string>
+    <string name="assess_subject4_option3">有时（约一半时候）</string>
+    <string name="assess_subject4_option4">大多数时候（远高于一半时候）</string>
+    <string name="assess_subject4_option5">几乎总是/总是</string>
+
+    <string name="t_iief5_score_record">IIEF-5评分记录</string>
+    <string name="title_score">国际勃起功能指数IIEF-5评分</string>
+    <string name="normal">正常</string>
+    <string name="slight_exception">轻度异常</string>
+    <string name="medium_exception">中度异常</string>
+    <string name="serious_exception">重度异常</string>
+    <string name="no_assessment">未评分</string>
+
+    //ehs 评分
+    <string name="t_ehs_score">EHS评分</string>
+    <string name="m_ehs_warning">请根据您过去6个月内性生活的情况，选出下面问题中适合您的选项，从而初步判断您的勃起硬度等级。</string>
+    <string name="ehs_assess_subject0_title">1/1,您的阴茎勃起硬度如何？</string>
+    <string name="ehs_assess_subject0_option0">阴茎有充血变大，但硬度不够，无法插入。(参考豆腐)</string>
+    <string name="ehs_assess_subject0_option1">阴茎有轻微勃起，但还未达到足以插入的硬度。(参考剥皮的香蕉)</string>
+    <string name="ehs_assess_subject0_option2">阴茎达到足以插入的硬度，但不够坚挺和持久。(参考带皮的香蕉)</string>
+    <string name="ehs_assess_subject0_option3">完全勃起而坚挺，而且够持久。(参考黄瓜)</string>
+    <string name="ehs_assess_subject0_option4">完全勃起而坚挺，而且够持久。(参考黄瓜)</string>
+    <string name="ehs_assess_subject0_option5">完全勃起而坚挺，而且够持久。(参考黄瓜)</string>
+
+    <string name="l_first_level">一级</string>
+    <string name="l_second_level">二级</string>
+    <string name="l_third_level">三级</string>
+    <string name="l_fourth_level">四级</string>
+
+    <string name="l_first_level_result">参考豆腐</string>
+    <string name="l_second_level_result">参考剥皮香蕉</string>
+    <string name="l_third_level_result">参考带皮香蕉</string>
+    <string name="l_fourth_level_result">参考黄瓜</string>
+    <string name="t_ehs_score_record">EHS评分记录</string>
+
+    //report
+    <string name="l_iief5_conclusion_normal">过去3-6个月内正常</string>
+    <string name="l_iief5_conclusion_slight">过去3-6月内有轻度勃起障碍</string>
+    <string name="l_iief5_conclusion_medium">过去3-6月内有中度勃起障碍</string>
+    <string name="l_iief5_conclusion_serious">过去3-6月内有重度勃起障碍</string>
+    <string name="l_ehs_conclusion_first">过去3-6月内勃起硬度为一级(参考豆腐)</string>
+    <string name="l_ehs_conclusion_second">过去3-6月内勃起硬度为二级(参考剥皮香蕉)</string>
+    <string name="l_ehs_conclusion_third">过去3-6月内勃起硬度为三级(参考带皮香蕉)</string>
+    <string name="l_ehs_conclusion_fourth">过去3-6月内勃起硬度为四级(参考黄瓜)</string>
+
+    <string name="l_report_ed_type_normal">正常</string>
+    <string name="l_report_ed_type_mixed">混合性</string>
+    <string name="l_report_ed_type_organic">器质性</string>
+    <string name="l_report_ed_normal">过去3-6月内正常</string>
+    <string name="l_report_ed_mixed">过去3-6月内混合性ED可能性大</string>
+    <string name="l_report_ed_organic">过去3-6月内器质性ED可能性大</string>
+    <string name="l_health">健康</string>
+
+    //monitor
+    <string name="l_strongest_erection">最大勃起强度</string>
+    <string name="l_longest_erection_time">最大勃起持续时间</string>
+    <string name="l_advice">建议</string>
+    <string name="m_wearing_advice">建议佩戴时至少6~8小时睡眠，并且连续测量2~3晚以排除其他干扰因素的影响，才能准确客官监测到夜间阴茎勃起情况。</string>
+    <string name="m_no_data_hint">本次无数据，更多请查看历史记录</string>
+    <string name="m_current_warning">当前提示：</string>
+    <string name="m_warning_message">当前结果仅供参考，不能做为最终诊断结果，请联系医生进行确诊。</string>
+    <string name="l_strongest_erection_unit">最大勃起强度(g)</string>
+    <string name="l_longest_erection_time_unit">最大勃起持续时间(min)</string>
+    <string name="l_result">结果</string>
+    <string name="l_greater_than_567">≥567</string>
+    <string name="l_greater_than_283_less_than_567">≥283,&#060;567</string>
+    <string name="l_less_than_283">&#060;283</string>
+    <string name="l_greater_than_10">≥10</string>
+    <string name="l_less_than_10">&#060;10</string>
+    <string name="l_mixed_ed">混合性ED</string>
+    <string name="l_organic_ed">器质性ED</string>
+
+    //introduction
+    <string name="intro_title_first">智能监测</string>
+    <string name="intro_title_second">健康评估</string>
+    <string name="intro_title_third">专属医疗服务</string>
+    <string name="intro_subtitle_first">隐私、便捷、快速的数据监测</string>
+    <string name="intro_subtitle_second">科学、规范、系统的男性私密健康评估</string>
+    <string name="intro_subtitle_third">实时对接专科医生，享受定制化医疗服务</string>
+    <string name="intro_button_text">立即体验</string>
+
+    <string name="not_found_hiensor">哎呀，未发现您的Hiensor</string>
+    <string name="ensure_device_connected_usb">请确认底座是否连接usb</string>
+    <string name="i_know">我知道了</string>
+
+    <string name="double_click_exit">再按一次退出程序</string>
+
+    <string name="hospital">医院</string>
+    <string name="men_bbs">男人圈</string>
+    <string name="me">我</string>
+
+
+    <string name="settings">设置</string>
+    <string name="function_introduction">功能介绍</string>
+    <string name="using_help">使用帮助</string>
+    <string name="user_feedback">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="give_high_praise">给我好评</string>
+    <string name="exit">退出</string>
+
+    <string name="account_info">账户信息</string>
+    <string name="avatar">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="my_account">我的账户</string>
+
+
+    <string name="login">登录</string>
+    <string name="skip">跳过</string>
+    <string name="login_error_hint">您输入的手机有误，请重新输入！</string>
+    <string name="login_number_empty">手机号不能为空！</string>
+    <string name="input_phone_num_hint">请输入11位手机号</string>
+    <string name="input_verification_code_hint">输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="agree_protocol_hint">点击登录即表示您同意</string>
+    <string name="terms_and_agreement_doctor">《硬汉邦 D版服务条款及协议》</string>
+    <string name="terms_and_agreement">服务条款与隐私协议</string>
+
+
+    //聊天
+    <string name="delete_conversation_messages">删除会话和消息</string>
+    <string name="delete_conversation">删除会话</string>
+    <string name="is_landing">正在登录...</string>
+
+    <string name="title_user_terms">用户协议</string>
+    <string name="hint_search_doctor">请输入您的主治医生的姓名</string>
+    <string name="title_doctors_list">医生列表</string>
+    <string name="title_add_my_doctor">添加我的医生</string>
+    <string name="title_doctor_introduction">医生简介</string>
+    <string name="label_bind_doctor">绑定医生</string>
+    <string name="label_send_message">发送消息</string>
+    <string name="label_workplace">执业点</string>
+    <string name="label_speciality">专长</string>
+    <string name="label_doctor_background">医学教育背景</string>
+    <string name="label_introduction">简介</string>
+
+    //chat
+    <string name="label_agree">同意</string>
+    <string name="label_refuse">拒绝</string>
+
+    <string name="text_image">[图片]</string>
+    <string name="text_voice">[语音]</string>
+
+    //health record
+
+    //report
+    <string name="ed_factor">与ED相关的风险因子</string>
+    <string name="erection_status">勃起状况分析</string>
+    <string name="health_risk">健康风险提示</string>
+    <string name="over_weight">超重</string>
+    <string name="drink">饮酒</string>
+    <string name="sex_no_regularity">性生活无规律</string>
+    <string name="no_morning_wood">无晨勃</string>
+    <string name="no_erection">未性交刺激下无勃起</string>
+    <string name="smoke">吸烟</string>
+
+    <string name="m_no_new_message">暂时没有新消息</string>
+
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+
+    <string name="city">{
+
+    "provinces": [
+
+          {
+
+                  "name": "热门地区",
+
+                  "citys": [
+
+                            "全国",
+
+                            "北京",
+
+                            "上海",
+
+                            "广州",
+
+                            "深圳",
+
+                            "杭州",
+
+                            "南京",
+
+                            "武汉",
+
+                            "天津",
+
+                            "厦门",
+
+                            "成都",
+
+                            "重庆"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "北京市",
+
+                  "citys": [
+
+                            "东城区",
+
+                            "西城区",
+
+                            "崇文区",
+
+                            "宣武区",
+
+                            "朝阳区",
+
+                            "海淀区",
+
+                            "丰台区",
+
+                            "石景山区",
+
+                            "房山区",
+
+                            "通州区",
+
+                            "顺义区",
+
+                            "昌平区",
+
+                            "大兴区",
+
+                            "怀柔区",
+
+                            "平谷区",
+
+                            "门头沟区",
+
+                            "密云区",
+
+                            "延庆区",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "广东省",
+
+                  "citys": [
+
+                            "广州",
+
+                            "深圳",
+
+                            "珠海",
+
+                            "汕头",
+
+                            "韶关",
+
+                            "佛山",
+
+                            "江门",
+
+                            "湛江",
+
+                            "茂名",
+
+                            "肇庆",
+
+                            "惠州",
+
+                            "梅州",
+
+                            "汕尾",
+
+                            "河源",
+
+                            "阳江",
+
+                            "清远",
+
+                            "东莞",
+
+                            "中山",
+
+                            "潮州",
+
+                            "揭阳",
+
+                            "云浮",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "上海市",
+
+                  "citys": [
+
+                            "黄浦区",
+
+                            "卢湾区",
+
+                            "徐汇区",
+
+                            "长宁区",
+
+                            "静安区",
+
+                            "普陀区",
+
+                            "闸北区",
+
+                            "虹口区",
+
+                            "杨浦区",
+
+                            "宝山区",
+
+                            "闵行区",
+
+                            "嘉定区",
+
+                            "松江区",
+
+                            "金山区",
+
+                            "青浦区",
+
+                            "南汇区",
+
+                            "奉贤区",
+
+                            "浦东新区",
+
+                            "崇明区",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "天津市",
+
+                  "citys": [
+
+                            "和平区",
+
+                            "河东区",
+
+                            "河西区",
+
+                            "南开区",
+
+                            "河北区",
+
+                            "红桥区",
+
+                            "塘沽区",
+
+                            "汉沽区",
+
+                            "大港区",
+
+                            "东丽区",
+
+                            "西青区",
+
+                            "北辰区",
+
+                            "津南区",
+
+                            "武清区",
+
+                            "宝坻区",
+
+                            "静海县",
+
+                            "宁河县",
+
+                            "蓟县",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "重庆市",
+
+                  "citys": [
+
+                            "渝中区",
+
+                            "大渡口区",
+
+                            "江北区",
+
+                            "南岸区",
+
+                            "北碚区",
+
+                            "渝北区",
+
+                            "巴南区",
+
+                            "长寿区",
+
+                            "双桥区",
+
+                            "沙坪坝区",
+
+                            "万盛区",
+
+                            "万州区",
+
+                            "涪陵区",
+
+                            "黔江区",
+
+                            "永川区",
+
+                            "合川区",
+
+                            "江津区",
+
+                            "九龙坡区",
+
+                            "南川区",
+
+                            "綦江县",
+
+                            "潼南区",
+
+                            "荣昌区",
+
+                            "璧山区",
+
+                            "大足区",
+
+                            "铜梁县",
+
+                            "梁平县",
+
+                            "开县",
+
+                            "忠县",
+
+                            "城口县",
+
+                            "垫江区",
+
+                            "武隆县",
+
+                            "丰都县",
+
+                            "奉节县",
+
+                            "云阳县",
+
+                            "巫溪县",
+
+                            "巫山县",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "辽宁省",
+
+                  "citys": [
+
+                            "沈阳",
+
+                            "大连",
+
+                            "鞍山",
+
+                            "抚顺",
+
+                            "本溪",
+
+                            "丹东",
+
+                            "锦州",
+
+                            "营口",
+
+                            "阜新",
+
+                            "辽阳",
+
+                            "盘锦",
+
+                            "铁岭",
+
+                            "朝阳",
+
+                            "葫芦岛",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "江苏省",
+
+                  "citys": [
+
+                            "南京",
+
+                            "苏州",
+
+                            "无锡",
+
+                            "常州",
+
+                            "镇江",
+
+                            "南通",
+
+                            "泰州",
+
+                            "扬州",
+
+                            "盐城",
+
+                            "连云港",
+
+                            "徐州",
+
+                            "淮安",
+
+                            "宿州",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "湖北省",
+
+                  "citys": [
+
+                            "武汉",
+
+                            "黄石",
+
+                            "十堰",
+
+                            "荆州",
+
+                            "宜昌",
+
+                            "襄樊",
+
+                            "鄂州",
+
+                            "荆门",
+
+                            "孝感",
+
+                            "黄冈",
+
+                            "咸宁",
+
+                            "随州",
+
+                            "仙桃",
+
+                            "天门",
+
+                            "潜江",
+
+                            "神农架",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "四川省",
+
+                  "citys": [
+
+                            "成都",
+
+                            "自贡",
+
+                            "攀枝花",
+
+                            "泸州",
+
+                            "德阳",
+
+                            "绵阳",
+
+                            "广元",
+
+                            "遂宁",
+
+                            "内江",
+
+                            "乐山",
+
+                            "南充",
+
+                            "眉山",
+
+                            "宜宾",
+
+                            "广安",
+
+                            "达州",
+
+                            "雅安",
+
+                            "巴中",
+
+                            "资阳",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "陕西省",
+
+                  "citys": [
+
+                            "西安",
+
+                            "铜川",
+
+                            "宝鸡",
+
+                            "咸阳",
+
+                            "渭南",
+
+                            "延安",
+
+                            "汉中",
+
+                            "榆林",
+
+                            "安康",
+
+                            "商洛",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "河北省",
+
+                  "citys": [
+
+                            "石家庄",
+
+                            "唐山",
+
+                            "秦皇岛",
+
+                            "邯郸",
+
+                            "邢台",
+
+                            "保定",
+
+                            "张家口",
+
+                            "承德",
+
+                            "沧州",
+
+                            "廊坊",
+
+                            "衡水",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "山西省",
+
+                  "citys": [
+
+                            "太原",
+
+                            "大同",
+
+                            "阳泉",
+
+                            "长治",
+
+                            "晋城",
+
+                            "朔州",
+
+                            "晋中",
+
+                            "运城",
+
+                            "忻州",
+
+                            "临汾",
+
+                            "吕梁",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "河南省",
+
+                  "citys": [
+
+                            "郑州",
+
+                            "开封",
+
+                            "洛阳",
+
+                            "平顶山",
+
+                            "安阳",
+
+                            "鹤壁",
+
+                            "新乡",
+
+                            "焦作",
+
+                            "濮阳",
+
+                            "许昌",
+
+                            "漯河",
+
+                            "三门峡",
+
+                            "南阳",
+
+                            "商丘",
+
+                            "信阳",
+
+                            "周口",
+
+                            "驻马店",
+
+                            "焦作",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "吉林省",
+
+                  "citys": [
+
+                            "吉林",
+
+                            "四平",
+
+                            "辽源",
+
+                            "通化",
+
+                            "白山",
+
+                            "松原",
+
+                            "白城",
+
+                            "延边朝鲜自治区",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "黑龙江",
+
+                  "citys": [
+
+                            "哈尔滨",
+
+                            "齐齐哈尔",
+
+                            "鹤岗",
+
+                            "双鸭山",
+
+                            "鸡西",
+
+                            "大庆",
+
+                            "伊春",
+
+                            "牡丹江",
+
+                            "佳木斯",
+
+                            "七台河",
+
+                            "黑河",
+
+                            "绥远",
+
+                            "大兴安岭地区",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "内蒙古",
+
+                  "citys": [
+
+                            "呼和浩特",
+
+                            "包头",
+
+                            "乌海",
+
+                            "赤峰",
+
+                            "通辽",
+
+                            "鄂尔多斯",
+
+                            "呼伦贝尔",
+
+                            "巴彦淖尔",
+
+                            "乌兰察布",
+
+                            "锡林郭勒盟",
+
+                            "兴安盟",
+
+                            "阿拉善盟"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "山东省",
+
+                  "citys": [
+
+                            "济南",
+
+                            "青岛",
+
+                            "淄博",
+
+                            "枣庄",
+
+                            "东营",
+
+                            "烟台",
+
+                            "潍坊",
+
+                            "济宁",
+
+                            "泰安",
+
+                            "威海",
+
+                            "日照",
+
+                            "莱芜",
+
+                            "临沂",
+
+                            "德州",
+
+                            "聊城",
+
+                            "滨州",
+
+                            "菏泽",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "安徽省",
+
+                  "citys": [
+
+                            "合肥",
+
+                            "芜湖",
+
+                            "蚌埠",
+
+                            "淮南",
+
+                            "马鞍山",
+
+                            "淮北",
+
+                            "铜陵",
+
+                            "安庆",
+
+                            "黄山",
+
+                            "滁州",
+
+                            "阜阳",
+
+                            "宿州",
+
+                            "巢湖",
+
+                            "六安",
+
+                            "亳州",
+
+                            "池州",
+
+                            "宣城"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "浙江省",
+
+                  "citys": [
+
+                            "杭州",
+
+                            "宁波",
+
+                            "温州",
+
+                            "嘉兴",
+
+                            "湖州",
+
+                            "绍兴",
+
+                            "金华",
+
+                            "衢州",
+
+                            "舟山",
+
+                            "台州",
+
+                            "丽水",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "福建省",
+
+                  "citys": [
+
+                            "福州",
+
+                            "厦门",
+
+                            "莆田",
+
+                            "三明",
+
+                            "泉州",
+
+                            "漳州",
+
+                            "南平",
+
+                            "龙岩",
+
+                            "宁德",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "湖南省",
+
+                  "citys": [
+
+                            "长沙",
+
+                            "株洲",
+
+                            "湘潭",
+
+                            "衡阳",
+
+                            "邵阳",
+
+                            "岳阳",
+
+                            "常德",
+
+                            "张家界",
+
+                            "益阳",
+
+                            "滨州",
+
+                            "永州",
+
+                            "怀化",
+
+                            "娄底",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "广西省",
+
+                  "citys": [
+
+                            "南宁",
+
+                            "柳州",
+
+                            "桂林",
+
+                            "梧州",
+
+                            "北海",
+
+                            "防城港",
+
+                            "钦州",
+
+                            "贵港",
+
+                            "玉林",
+
+                            "百色",
+
+                            "贺州",
+
+                            "河池",
+
+                            "来宾",
+
+                            "崇左",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "江西省",
+
+                  "citys": [
+
+                            "南昌",
+
+                            "景德镇",
+
+                            "萍乡",
+
+                            "九江",
+
+                            "新余",
+
+                            "鹰潭",
+
+                            "赣州",
+
+                            "吉安",
+
+                            "宜春",
+
+                            "抚州",
+
+                            "上饶",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "贵州省",
+
+                  "citys": [
+
+                            "贵阳",
+
+                            "六盘水",
+
+                            "遵义",
+
+                            "安顺",
+
+                            "铜仁",
+
+                            "毕节",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "云南省",
+
+                  "citys": [
+
+                            "昆明",
+
+                            "曲靖",
+
+                            "玉溪",
+
+                            "保山",
+
+                            "邵通",
+
+                            "丽江",
+
+                            "普洱",
+
+                            "临沧",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "西藏",
+
+                  "citys": [
+
+                            "拉萨",
+
+                            "那曲地区",
+
+                            "昌都地区",
+
+                            "林芝地区",
+
+                            "山南区",
+
+                            "阿里区",
+
+                            "日喀则",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "海南省",
+
+                  "citys": [
+
+                            "海口",
+
+                            "三亚",
+
+                            "五指山",
+
+                            "琼海",
+
+                            "儋州",
+
+                            "文昌",
+
+                            "万宁",
+
+                            "东方",
+
+                            "澄迈县",
+
+                            "定安县",
+
+                            "屯昌县",
+
+                            "临高县",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "甘肃省",
+
+                  "citys": [
+
+                            "兰州",
+
+                            "嘉峪关",
+
+                            "金昌",
+
+                            "白银",
+
+                            "天水",
+
+                            "武威",
+
+                            "酒泉",
+
+                            "张掖",
+
+                            "庆阳",
+
+                            "平凉",
+
+                            "定西",
+
+                            "陇南",
+
+                            "临夏",
+
+                            "甘南",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "宁夏",
+
+                  "citys": [
+
+                            "银川",
+
+                            "石嘴山",
+
+                            "吴忠",
+
+                            "固原",
+
+                            "中卫",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "青海",
+
+                  "citys": [
+
+                            "西宁",
+
+                            "海东地区",
+
+                            "海北藏族自治区",
+
+                            "海南藏族自治区",
+
+                            "黄南藏族自治区",
+
+                            "果洛藏族自治区",
+
+                            "玉树藏族自治州",
+
+                            "还西藏族自治区",
+
+                            "其他"
+
+                            ]
+
+                  },
+
+                  {
+
+                  "name": "新疆",
+
+                  "citys": [
+
+                            "乌鲁木齐",
+
+                            "克拉玛依",
+
+                            "吐鲁番地区",
+
+                            "哈密地区",
+
+                            "和田地区",
+
+                            "阿克苏地区",
+
+                            "喀什地区",
+
+                            "克孜勒苏柯尔克孜",
+
+                            "巴音郭楞蒙古自治区",
+
+                            "昌吉回族自治州",
+
+                            "博尔塔拉蒙古自治区",
+
+                            "石河子",
+
+                            "阿拉尔",
+
+                            "图木舒克",
+
+                            "五家渠",
+
+                            "伊犁哈萨克自治区",
+
+                            "其他"
+
+                            ]
+
+                  }
+
+                  ]
+
+}
+</string>
+
+</resources>

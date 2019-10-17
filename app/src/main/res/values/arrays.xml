@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sexual">
+        <item>@string/have_sexual</item>
+        <item>@string/have_not_sexual</item>
+    </string-array>
+
+    <string-array name="fertility">
+        <item>@string/have_fertility</item>
+        <item>@string/have_not_fertility</item>
+    </string-array>
+    <string-array name="disease">
+        <item>@string/nothing</item>
+        <item>@string/hypertension</item>
+        <item>@string/diabetes</item>
+        <item>@string/heart_disease</item>
+        <item>@string/prostate_disease</item>
+        <item>@string/hyperlipidemia</item>
+        <item>@string/sleep_disorders</item>
+        <item>@string/penisdeformity</item>
+        <item>@string/penile_induration</item>
+        <item>@string/hypogonadism</item>
+        <item>@string/hepatic_insufficiency</item>
+        <item>@string/multiple_sclerosis</item>
+        <item>@string/metabolic_syndrome</item>
+        <item>@string/encephalatrophy</item>
+        <item>@string/thyroid_thyroid</item>
+    </string-array>
+    <string-array name="operation">
+        <item>@string/nothing</item>
+        <item>@string/spinal_cord_injury</item>
+        <item>@string/brain_trauma</item>
+        <item>@string/genital_trauma</item>
+        <item>@string/urethra_operation</item>
+        <item>@string/prostate_operation</item>
+        <item>@string/pelvic_trauma</item>
+        <item>@string/sympathetic_nerve_resection</item>
+        <item>@string/pelvic_viscera_operation</item>
+        <item>@string/pelvic_reflection_treatment</item>
+        <item>@string/retroperitoneal_lymph_node_cleaning</item>
+    </string-array>
+    <string-array name="smoking">
+        <item>@string/never</item>
+        <item>@string/occasionally</item>
+        <item>@string/often</item>
+        <item>@string/everyday</item>
+    </string-array>
+    <string-array name="drinking">
+        <item>@string/never</item>
+        <item>@string/occasionally</item>
+        <item>@string/often</item>
+        <item>@string/everyday</item>
+    </string-array>
+    <string-array name="medication">
+        <item>@string/dramamine</item>
+        <item>@string/naproxen</item>
+        <item>@string/disopyramide</item>
+        <item>@string/furosemide</item>
+        <item>@string/flutamide</item>
+        <item>@string/hydrochlorothiazide</item>
+        <item>@string/enalapril</item>
+        <item>@string/amoxicilli</item>
+    </string-array>
+    <string-array name="medication_frequency">
+        <item>@string/occasionally</item>
+        <item>@string/often</item>
+        <item>@string/everyday</item>
+    </string-array>
+
+    <string-array name="a_global_disease">
+        <item>@string/l_high_blood</item>
+        <item>@string/l_coronary_heart_disease</item>
+        <item>@string/l_diabetes</item>
+        <item>@string/l_hyperlipidemia</item>
+    </string-array>
+
+    <string-array name="a_genital_system_disease">
+        <item>@string/l_penis_malformation</item>
+        <item>@string/l_penis_indurate</item>
+        <item>@string/l_prostate_disease</item>
+    </string-array>
+
+    <string-array name="a_internal_secretion_disease">
+        <item>@string/l_hypothyroidism</item>
+        <item>@string/l_hypogonadism</item>
+        <item>@string/l_hyperprolactinemia</item>
+    </string-array>
+
+    <string-array name="a_psychological_disease">
+        <item>@string/l_depressive_disorder</item>
+        <item>@string/l_sleep_disorder</item>
+    </string-array>
+    
+    <string-array name="a_operation_injury_history">
+        <item>@string/l_urethral_injury</item>
+        <item>@string/l_prostate_operation</item>
+        <item>@string/l_pelvic_trauma</item>
+        <item>@string/l_genital_trauma</item>
+        <item>@string/l_genital_operation</item>
+        <item>@string/l_central_nervous_system_trauma</item>
+        <item>@string/l_lumbar_injury</item>
+    </string-array>
+    
+    <string-array name="a_antihypertensive_drugs">
+        <item>@string/l_hydragogue</item>
+    </string-array>
+    
+    <string-array name="a_antiandrogen">
+        <item>@string/l_gnrh</item>
+        <item>@string/l_antagonist</item>
+    </string-array>
+    
+    <string-array name="a_antidepressants">
+        <item>@string/l_tricyclic_antidepressant</item>
+        <item>@string/l_diazepam</item>
+    </string-array>
+
+    <string-array name="a_recreational_drug">
+        <item>@string/l_alcoholic_beverage</item>
+        <item>@string/l_heroin</item>
+        <item>@string/l_cocaine</item>
+    </string-array>
+
+</resources>

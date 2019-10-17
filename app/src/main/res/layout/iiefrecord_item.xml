@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_score_time"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:textSize="30px"
+        android:textColor="@color/report_text_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:text="2018-06-01"/>
+    <TextView
+        android:id="@+id/tv_score_result"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:textSize="30px"
+        android:gravity="center_vertical"
+        android:paddingRight="20px"
+        android:text="18  轻度异常"/>
+
+
+</RelativeLayout>

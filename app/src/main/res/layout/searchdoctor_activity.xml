@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_back"
+            android:drawableLeft="@drawable/global_btn_back"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x35"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="请输入医生姓名、医院"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/x15"
+            android:paddingLeft="@dimen/x5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionSearch"
+           android:textCursorDrawable="@drawable/cursor"
+            android:drawablePadding="@dimen/x15"
+            android:id="@+id/edittext_search_doctor"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/doctor_icon_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x15"
+            android:background="@drawable/edittext_shape"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳"
+            android:id="@+id/tv_city"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="@dimen/x6"
+            android:layout_marginRight="@dimen/x15"
+            android:drawableRight="@drawable/doctor_btn_area"
+            android:textSize="@dimen/x15"
+            android:textColor="#000000"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smartLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:srlPrimaryColor="#444444"
+    app:srlAccentColor="@android:color/white"
+    app:srlEnablePreviewInEditMode="true">
+    <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+    <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/listview_search_doctor">
+
+        </ListView>
+
+
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/ly_noDoctor"
+
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/doctor_icon_nomsg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x29"
+                android:textColor="#cccccc"
+                android:text="暂时未搜索到数据"
+                android:textSize="@dimen/x15"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

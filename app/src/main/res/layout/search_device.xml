@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_head_back"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/x24"
+        android:id="@+id/tv_search_title"
+        android:textStyle="bold"
+        android:text="@string/searching_device"
+        android:layout_marginTop="@dimen/x20"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:textSize="@dimen/x15"
+        android:id="@+id/tv_search_tips"
+        android:gravity="center"
+        android:text="@string/go_setting_openblue"
+        android:textColor="#000000"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x20">
+
+    <cc.hisens.hardboiled.patient.wideview.RippleView
+        android:layout_width="@dimen/x235"
+        android:layout_height="@dimen/x235"
+        app:cIsAlpha="true"
+        app:cDensity="20"
+        android:visibility="gone"
+        android:id="@+id/ripple_view"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_centerInParent="true"
+        app:cIsFill="false"
+        app:cColor="@color/hisens_blue"
+        app:cSpeed="1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_search_device"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/x50"
+        android:background="@drawable/bluetooth_pic_ring"/>
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="@dimen/x115"
+        android:layout_height="@dimen/x32"
+        android:text="@string/re_search"
+        android:id="@+id/bt_search"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/hisens_blue"
+        android:background="@drawable/btn_re_search"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_gravity="center_horizontal"/>
+
+
+     <ListView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/listview_searchDevice"
+         android:layout_marginTop="@dimen/x30"/>
+
+
+
+
+</LinearLayout>

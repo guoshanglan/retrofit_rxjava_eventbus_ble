@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30"
+        android:id="@+id/iv_monitorrecord"
+        android:layout_marginLeft="@dimen/x12"
+       android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/home_icon_npt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NPT模式"
+        android:id="@+id/tv_monitorecord_type"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_toRightOf="@id/iv_monitorrecord"
+        android:textColor="#000000"/>
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/x25"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="@dimen/x12"
+      android:textColor="#666666"
+      android:id="@+id/tv_monitorecord_date"
+      android:text="10日 22:34-07:21"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#e5e5e5"
+        android:layout_below="@id/iv_monitorrecord"
+        android:layout_marginTop="@dimen/x20"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff2724"
+        android:layout_marginTop="@dimen/x40"
+        android:textSize="@dimen/x16"
+        android:id="@+id/tv_tips_view"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_centerInParent="true"
+        android:text="您所请求的网络数据出现异常，请稍后重试!!"/>
+
+     <ImageView
+         android:layout_width="@dimen/x15"
+         android:layout_height="@dimen/x15"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="@dimen/x15"
+         android:id="@+id/iv_close_view"
+         android:layout_marginTop="@dimen/x5"
+         android:src="@drawable/doctor_btn_close"/>
+
+
+</RelativeLayout>

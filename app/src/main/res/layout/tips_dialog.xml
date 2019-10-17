@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/tips_shape"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="@dimen/x300"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x20"
+        android:id="@+id/tv_message"
+        android:textColor="#000000"
+        android:textSize="@dimen/x17"
+       android:gravity="center"
+        android:text="确定要取消订单吗？"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cecece"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tv_cancel"
+            android:gravity="center"
+            android:textColor="#0072e5"
+            android:textSize="@dimen/x17"
+            android:text="取消"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#cecece"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:id="@+id/tv_sure"
+            android:textColor="#0072e5"
+            android:gravity="center"
+            android:textSize="@dimen/x17"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

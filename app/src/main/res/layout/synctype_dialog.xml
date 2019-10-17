@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="@dimen/x34"
+            android:layout_height="@dimen/x7"
+            android:id="@+id/sync_tv1"
+            android:background="@drawable/syncdialog_selected_shape"/>
+        <TextView
+            android:layout_width="@dimen/x34"
+            android:layout_height="@dimen/x7"
+            android:layout_marginLeft="@dimen/x10"
+            android:id="@+id/sync_tv2"
+            android:background="@drawable/syncdialog_unselected_shape"/>
+        
+    </LinearLayout>
+    
+    <cc.hisens.hardboiled.patient.wideview.ContentViewPager
+        android:layout_width="@dimen/x305"
+        android:layout_height="410dp"
+        android:id="@+id/viewpager_syncdata"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_gravity="center_horizontal">
+        
+    </cc.hisens.hardboiled.patient.wideview.ContentViewPager>
+
+
+
+
+    
+
+</LinearLayout>

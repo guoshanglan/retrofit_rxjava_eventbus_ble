@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_head_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x190">
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:layout_width="match_parent"
+        android:id="@+id/lc_monitorrecord"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_height="138dp">
+
+    </com.github.mikephil.charting.charts.CombinedChart>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:layout_width="match_parent"
+            android:id="@+id/lc_monitorrecord2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_height="138dp">
+
+        </com.github.mikephil.charting.charts.CombinedChart>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="14dp"
+        android:text="平均硬度(g)"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:text="550"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:text="190"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:text="90"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:text="140"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="15dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/x20"
+            android:paddingLeft="@dimen/x40"
+            android:paddingRight="@dimen/x10">
+
+            <TextView
+                android:id="@+id/npt_retangle"
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/x12"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_npt_shape" />
+
+            <TextView
+                android:id="@+id/tv_npt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x4"
+                android:layout_toRightOf="@id/npt_retangle"
+                android:text="NPT趋势"
+                android:textColor="#999999"
+                android:textSize="@dimen/x11" />
+
+
+            <TextView
+                android:id="@+id/avss_retangle"
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/x12"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@id/tv_npt"
+                android:background="@drawable/home_avss_shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x4"
+                android:layout_toRightOf="@id/avss_retangle"
+                android:text="干预趋势"
+                android:textColor="#999999"
+                android:textSize="@dimen/x11" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*近一年勃起趋势图"
+                android:textColor="#999999"
+                android:textSize="@dimen/x12" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/stickList_monitorRecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/x10"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1/9"
+            android:textSize="@dimen/x17"
+            android:id="@+id/tv_title"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:id="@+id/tv_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x15"
+            android:textSize="@dimen/x15"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/preview_viewpager"
+        android:layout_weight="1">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/x10" />
+
+
+</LinearLayout>

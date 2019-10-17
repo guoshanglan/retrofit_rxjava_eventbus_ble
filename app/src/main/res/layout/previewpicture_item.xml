@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:id="@+id/rl_preview"
+    android:layout_width="@dimen/x98"
+    android:layout_height="98dp">
+
+  <ImageView
+      android:layout_width="@dimen/x90"
+      android:layout_height="@dimen/x90"
+      android:id="@+id/iv_preview"
+     android:layout_centerInParent="true"
+      android:layout_marginRight="@dimen/x4"
+      android:background="#cccccc"/>
+
+
+</RelativeLayout>

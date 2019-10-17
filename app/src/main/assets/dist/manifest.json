@@ -1,0 +1,13 @@
+{
+    "name": "hisens",
+    "short_name": "hisens",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#35d5db",
+    "theme_color": "#35d5db",
+    "icons": [{
+        "src": "/youhun.jpg",
+        "sizes": "120x120",
+        "type": "image/png"
+    }]
+}

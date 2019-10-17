@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cc.hisens.hardboiled.patient"
+    android:versionCode="12"
+    android:versionName="1.2.1"
+    tools:ignore="GradleOverrides">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="@string/hisens_app_name"
+        android:icon="@mipmap/icon"
+        android:label="@string/hisens_app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/net_config"
+        tools:replace="android:icon,android:theme,android:appComponentFactory">
+
+
+        <!--Service-->
+        <service android:name=".ble.BleService" />
+        <service android:name=".ble.SyncDataService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="cc.hisens.hardboiled.patient"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx60499837b85cc2c5" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.AppIntroductActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.login.GetVoliatCodeActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.searchdevice.SearchDeviceActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.selectcity.SelectCityActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.searchdoctor.SearchDoctorActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+
+        <activity
+            android:name=".ui.activity.UserAgreementActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.iief_5.IIEF_5Activity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ehsassess.EHSAssessActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.score.ScoreActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.aboutus.AboutUsActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.chat.ChatActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.activity.monitorrecord.MonitorRecordActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.activity.SyncDataActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.doctordetail.DoctorDetailActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+        android:name=".ui.activity.monitorResult.MonitorResultActivity"
+        android:configChanges="orientation|screenLayout"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.healthrecord.PersonHealthRecordActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.healthrecord.SetNameActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.activity.healthrecord.MedicineHistoryActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.healthrecord.OperationHistoryActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.healthrecord.ConcomitantDiseaseActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.doctor_introduce.DoctorIntroduceActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PreviewHeadActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.preview_photo.PreviewPictureActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.patient_evaluation.Patient_evaluationActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.consultion.ConsultTypeActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity
+            android:name=".ui.activity.PayActivity"
+            android:configChanges="orientation|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

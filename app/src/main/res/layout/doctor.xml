@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cc.hisens.hardboiled.patient.wideview.PagerSlidingTabStrip
+            android:id="@+id/pageSide"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x44"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x5"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/hisens_blue"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsShouldExpand="false"
+            app:pstsTabBackground="@null"
+            app:pstsUnderlineHeight="0dp"/>
+
+        <ImageView
+            android:layout_width="@dimen/x8"
+            android:layout_height="@dimen/x8"
+            android:layout_marginLeft="@dimen/x89"
+            android:layout_marginTop="@dimen/x10"
+            android:id="@+id/iv_red"
+            android:visibility="gone"
+            android:src="@drawable/red_dot"/>
+
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/iv_doctor_add"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/doctor_btn_add"/>
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_doctor">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>

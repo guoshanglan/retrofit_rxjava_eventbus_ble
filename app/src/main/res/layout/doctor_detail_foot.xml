@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+ <TextView
+     android:layout_width="@dimen/x100"
+     android:layout_height="@dimen/x32"
+     android:text="查看全部"
+     android:id="@+id/tv_all"
+     android:layout_marginBottom="@dimen/x31"
+     android:layout_gravity="center"
+     android:layout_marginTop="@dimen/x31"
+     android:textColor="#000000"
+     android:gravity="center"
+     android:visibility="gone"
+     android:textSize="@dimen/x15"
+     android:background="@drawable/doctor_detail_shape"/>
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_marginTop="@dimen/x80"
+     android:id="@+id/tv_nomessage"
+     android:text="暂无评价"
+     android:visibility="gone"
+     android:textColor="@color/black"
+     android:textSize="@dimen/x20"/>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cc.hisens.hardboiled.patient.wideview.CircleImageView
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/x50"
+        android:id="@+id/iv_avator"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text=""
+        android:id="@+id/tv_username"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/iv_avator"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x15"
+       android:textSize="@dimen/x17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tv_zhiwei"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/tv_username"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginLeft="@dimen/x15"
+        android:textSize="@dimen/x13" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textColor="@color/hint_top_color"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x15"
+        android:visibility="gone"
+        android:id="@+id/tv_star"
+        android:drawablePadding="@dimen/x8"
+        android:drawableLeft="@drawable/doctor_icon_star"
+        android:textSize="@dimen/x17"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tv_position"
+        android:textColor="#999999"
+        android:layout_below="@id/tv_username"
+        android:layout_toRightOf="@id/iv_avator"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x11"
+        android:layout_marginLeft="@dimen/x15"
+        android:textSize="@dimen/x13" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_position"
+        android:layout_marginTop="@dimen/x15"
+        android:background="#e5e5e5"></View>
+
+</RelativeLayout>

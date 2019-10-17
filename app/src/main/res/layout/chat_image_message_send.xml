@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00"
+        android:id="@+id/tv_time_send"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/x15"
+        android:textColor="#999999"/>
+
+    <RelativeLayout
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/talk_bg_black">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/x150"
+            android:maxHeight="@dimen/x200"
+            android:id="@+id/chat_item_image_send"
+            android:src="@drawable/doctor_head_160"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+            android:text="9"
+            android:id="@+id/chat_item_image_count_send"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:background="@drawable/chat_shape"
+           android:layout_alignRight="@id/chat_item_image_send"
+            android:layout_alignBottom="@id/chat_item_image_send"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

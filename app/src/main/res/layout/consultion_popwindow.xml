@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f9f9f8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="@dimen/x16"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x25"
+        android:text="选择问诊方式"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x15"
+        android:src="@drawable/doctor_btn_close"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_close"
+    android:layout_marginLeft="@dimen/x15"
+    android:layout_marginRight="@dimen/x15"
+    android:id="@+id/ly_tuwen"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/x24"
+    android:paddingLeft="@dimen/x15"
+    android:paddingRight="@dimen/x15"
+    android:background="@drawable/consultion_dialog_shape">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:layout_marginTop="@dimen/x20"
+            android:id="@+id/iv_tuwen"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginBottom="@dimen/x20"
+            android:src="@drawable/doctor_icon_asking01"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="图文问诊"
+               android:textSize="@dimen/x17"
+               android:id="@+id/tv_tuwen"
+               android:layout_toRightOf="@id/iv_tuwen"
+               android:layout_marginTop="@dimen/x20"
+               android:layout_marginLeft="@dimen/x16"
+               android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥20"
+            android:id="@+id/tv_tuwen_price"
+            android:textSize="@dimen/x15"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_toRightOf="@id/iv_tuwen"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_below="@id/tv_tuwen"
+            android:textColor="@color/hisens_blue"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/doctor_btn_right_green"/>
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#f3f3f3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x18"
+        android:textColor="#999999"
+        android:layout_marginBottom="@dimen/x18"
+        android:text=".通过文字、图片向医生提问，含5次发送消息机会"
+        android:textSize="@dimen/x16"/>
+
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_tuwen"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:id="@+id/ly_wenzhen"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/x30"
+        android:layout_marginTop="@dimen/x15"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:background="@drawable/consultion_dialog_shape">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:layout_marginTop="@dimen/x20"
+                android:id="@+id/iv_wenzhen"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginBottom="@dimen/x20"
+                android:src="@drawable/doctor_icon_asking02"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问诊服务包"
+                android:textSize="@dimen/x17"
+                android:id="@+id/tv_wenzhen"
+                android:layout_toRightOf="@id/iv_wenzhen"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_marginLeft="@dimen/x16"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥90"
+                android:textSize="@dimen/x15"
+                android:id="@+id/tv_package_price"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_toRightOf="@id/iv_wenzhen"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_below="@id/tv_wenzhen"
+                android:textColor="@color/hisens_blue"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/doctor_btn_right_green"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="#f3f3f3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x18"
+            android:textColor="#999999"
+            android:layout_marginBottom="@dimen/x18"
+            android:text=".含5次图文问诊机会，便于医生长期跟踪服务"
+            android:textSize="@dimen/x16"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

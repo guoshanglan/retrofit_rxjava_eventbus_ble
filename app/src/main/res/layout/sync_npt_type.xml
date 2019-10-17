@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/tips_shape"
+    android:layout_width="305dp"
+    android:layout_height="345dp">
+
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="@dimen/x25"
+         android:background="@drawable/home_icon_npt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜间勃起模式(NPT)"
+        android:textStyle="bold"
+        android:textSize="@dimen/x20"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x21"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x11"
+        android:textColor="#999999"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_gravity="center_horizontal"
+        android:text="需满足以下条件，否则影响医生诊断"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="@dimen/x13"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x23"
+        android:drawablePadding="@dimen/x7"
+        android:drawableLeft="@drawable/home_icon_gou"
+        android:text="21:00~08:00期间测量"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="@dimen/x13"
+        android:layout_marginTop="@dimen/x7"
+        android:layout_marginLeft="@dimen/x23"
+        android:drawablePadding="@dimen/x7"
+        android:drawableLeft="@drawable/home_icon_gou"
+        android:text="睡眠状态"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="@dimen/x13"
+        android:layout_marginTop="@dimen/x7"
+        android:layout_marginLeft="@dimen/x23"
+        android:drawablePadding="@dimen/x7"
+        android:drawableLeft="@drawable/home_icon_gou"
+        android:text="佩戴时间>=6小时"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="@dimen/x13"
+        android:layout_marginTop="@dimen/x7"
+        android:layout_marginLeft="@dimen/x23"
+        android:drawablePadding="@dimen/x7"
+        android:drawableLeft="@drawable/home_icon_gou"
+        android:text="无药物作用或性刺激等外界因素干扰。"/>
+    
+    
+    <TextView
+        android:layout_width="@dimen/x155"
+        android:layout_height="@dimen/x34"
+        android:layout_marginTop="@dimen/x20"
+        android:text="确认"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/tv_sure_npt"
+        android:layout_marginBottom="@dimen/x20"
+        android:background="@drawable/btn_getverification_code_input_shape"
+        android:layout_gravity="center_horizontal"/>
+    
+
+</LinearLayout>
